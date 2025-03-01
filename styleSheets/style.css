@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;;
+}
+
+:root{
+    --main-color: #3752FD;
+    --bg-color: #F4F7FF;
+}
+
+body{
+    width: 100%;
+    height: fit-content;
+    background: var(--bg-color);
+}
+
+.body-content{
+    width: 80%;
+    margin: auto;
+}
+
+/* ___________Header___________ */
+
+.head-contetn{
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-logo{
+    font-weight: 300;
+}
+
+.bold-logo{
+    font-weight: 600;
+}
+
+.right-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.full-count{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    /* background: var(--bg-color); */
+    background: #f2f2f2;
+    border-radius: 32px;
+}
+
+/* _____________main___________ */
+
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.task-section{
+    grid-column: span 3;
+}
+
+.task-section-content{
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 20px 20px;
+    margin-top: 20px;
+}
+
+.top-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #d2d1d1;
+}
+
+.task-assinged, .task-date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--bg-color);
+    padding: 30px 20px;
+    border-radius: 16px;
+}
+
+.check-box, .date-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.task-count, .current-date{
+    font-weight: 800;
+}
+
+.task-discover{
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(45deg, #3752FD, #6C7FFA, #9BA8F8);
+    padding: 30px 20px;
+    border-radius: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.new-day{
+    font-size: 18px;
+}
+
+/* _____________Task-Boxes___________ */
+
+.task-boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box-item{
+    background: var(--bg-color);
+    border-radius: 16px;
+}
+
+.box-content{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.p{
+    display: inline-block;
+    background: #fff;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 16px;
+}
+
+h6{
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.discrip{
+    background: #fff;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    text-overflow: ellipsis;
+}
+
+.deadline{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dline{
+    font-size: 14px;
+}
+
+.assign-date{
+    font-weight: 500;
+}
+
+.task-btn, .clear-btn{
+    background: var(--main-color);
+    padding: 8px 10px;
+    border:  none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ____________Activity-log___________ */
+
+
+.activity-log{
+    background: #fff;
+    box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 20px 20px;
+    margin-top: 20px;
+}
+
+.activity-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #f2f2f2;
+}
+
+.log{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#historyBtn:hover{
+    background: #4b62fc;
+}
+
+#history{
+    margin-top: 20px;
+}
+
+/* extra class */
+
+.desabled{
+    background: #d2d1d1;
+    color: black;
+}
+
+.history-para{
+    background: #f2f2f2;
+    border-radius: 8px;
+    padding: 6px 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
