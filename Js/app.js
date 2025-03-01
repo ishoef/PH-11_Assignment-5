@@ -35,7 +35,7 @@ for(let i = 0; i < allBtns.length; i++){
         let taskDate = new Date();
         let currentTime = taskDate.toLocaleTimeString();
         console.log(currentTime);
-        let updatePara = `You Have Complete The Task <strong> ${crntTitle} </strong> at ${currentTime}`;
+        let updatePara = `You Have Complete The Task <strong>${crntTitle}</strong> at ${currentTime}`;
 
         let p = document.createElement("p");
         p.innerHTML = updatePara;
@@ -66,3 +66,16 @@ document.getElementById('themdChanger').addEventListener('click', function(){
     const colors = ['#89A8B2', '#F1F0E8', '#D6EFD8', '#D9EAFD'];
     document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 })
+
+// Discover Somthing New 
+
+const questionPage = document.getElementById('newDay');
+
+    questionPage.addEventListener('click', function(){
+        window.location.href = "blog.html";
+    })
+
+
+const backBtn = document.getElementById('backBtn');
+
+console.log(backBtn);
