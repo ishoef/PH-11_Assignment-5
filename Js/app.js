@@ -41,7 +41,6 @@ for(let i = 0; i < allBtns.length; i++){
 
         let historyContainer = document.getElementById('history');
         historyContainer.appendChild(p);
-
     })
 }
 
@@ -50,7 +49,6 @@ document.getElementById('historyBtn').addEventListener('click', function(){
     let allHistory = document.getElementById('history');
     allHistory.innerText = '';
 })
-
 
 // Current Date 
 let currentDate = document.getElementById('currentDate');
