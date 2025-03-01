@@ -4,7 +4,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", serif;;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 :root{
@@ -86,11 +88,23 @@ body{
     border-bottom: 2px dashed rgb(155, 155, 155);
 }
 
-h2, .answer-text{
+h2{
+    font-weight: 550;
+}
+
+h2, .answer{
     padding: 20px;
 }
 
 .answer-text{
     font-size: 24px;
     color: #8f8e8e;
+}
+
+.some{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 8px;
+    color: #949494;
+    letter-spacing: 1.5px;
 }

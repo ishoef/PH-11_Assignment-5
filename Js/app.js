@@ -59,7 +59,8 @@ const crntDate = new Date();
 const year = crntDate.getFullYear();
 const month = String(crntDate.getMonth() + 1).padStart(2, '0');
 const day = String(crntDate.getDate()).padStart(2, '0');
-currentDate.innerText = `${year}-${month}-${day}`;
+// currentDate.innerText = `${year}-${month}-${day}`;
+currentDate.innerText = `${day}-${month}-${year}`;
 
 // Background color Change
 document.getElementById('themdChanger').addEventListener('click', function(){
@@ -69,13 +70,8 @@ document.getElementById('themdChanger').addEventListener('click', function(){
 
 // Discover Somthing New 
 
-const questionPage = document.getElementById('newDay');
+const blogPage = document.getElementById('task-discover');
 
-    questionPage.addEventListener('click', function(){
-        window.location.href = "blog.html";
-    })
-
-
-const backBtn = document.getElementById('backBtn');
-
-console.log(backBtn);
+blogPage.addEventListener('click', function(){
+    window.location.href = "blog.html";
+})
