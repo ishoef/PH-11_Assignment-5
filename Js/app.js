@@ -32,14 +32,17 @@ for(let i = 0; i < allBtns.length; i++){
 
         // history with title
         let crntTitle = taskTitle[i].innerText;
-
-        let updatePara = "You Have Complete The Task <strong> ${crntTitle} </strong> at ${showCurrentTime()}";
+        let taskDate = new Date();
+        let currentTime = taskDate.toLocaleTimeString();
+        console.log(currentTime);
+        let updatePara = `You Have Complete The Task <strong> ${crntTitle} </strong> at ${currentTime}`;
 
         let p = document.createElement("p");
-        p.innerText = updatePara;
+        p.innerHTML = updatePara;
         p.classList.add('history-para');
 
         let historyContainer = document.getElementById('history');
+        console.log(historyContainer);
         historyContainer.appendChild(p);
     })
 }
