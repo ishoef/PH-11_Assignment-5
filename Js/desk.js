@@ -4,7 +4,6 @@ let taskCount = document.getElementById('task-count');
 let allBtns = document.querySelectorAll('.task-btn');
 let taskTitle = document.querySelectorAll('.taskTitle');
 
-
 for(let i = 0; i < allBtns.length; i++){
     allBtns[i].addEventListener("click", function(){
         alert("Board Updated Successfully!!");
@@ -23,7 +22,6 @@ for(let i = 0; i < allBtns.length; i++){
         let totaltasks = parseInt(totalTask.innerText);
         totaltasks++;
         totalTask.innerText = totaltasks;
-
 
         // congrats Alert
         if(taskCounts === 0){
@@ -58,11 +56,12 @@ let currentDate = document.getElementById('currentDate');
 let weekDay = document.getElementById('dayName');
 const crntDate = new Date();
 const year = crntDate.getFullYear();
-const month = String(crntDate.getMonth() + 1).padStart(2, '0');
+// const month = String(crntDate.getMonth() + 1).padStart(2, '0');
+const month = crntDate.toLocaleDateString('en-US', { month: 'short'});
 const day = String(crntDate.getDate()).padStart(2, '0');
-const dayName = crntDate.toLocaleDateString('en-US', {weekday: 'long'});
-currentDate.innerText = `${day}-${month}-${year}`;
-weekDay.innerText = `${dayName}`
+const dayName = crntDate.toLocaleDateString('en-US', {weekday: 'short'});
+currentDate.innerText = `${month} ${day} ${year}`;
+weekDay.innerText = `${dayName} ,`
 
 // Background color Change
 document.getElementById('themdChanger').addEventListener('click', function(){
