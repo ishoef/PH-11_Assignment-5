@@ -68,6 +68,10 @@ body{
     border-radius: 32px;
 }
 
+#themdChanger{
+    cursor: pointer;
+}
+
 /* _____________main___________ */
 
 .main-content{

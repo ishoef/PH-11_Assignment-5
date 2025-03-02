@@ -27,7 +27,7 @@ for(let i = 0; i < allBtns.length; i++){
 
         // congrats Alert
         if(taskCounts === 0){
-            alert('Congratulations, You Completed All Tasks');
+            alert('Congrates!!! You have completed all the current tasks.');
         }
 
         // history with title
@@ -55,12 +55,14 @@ document.getElementById('historyBtn').addEventListener('click', function(){
 
 // Current Date 
 let currentDate = document.getElementById('currentDate');
+let weekDay = document.getElementById('dayName');
 const crntDate = new Date();
 const year = crntDate.getFullYear();
 const month = String(crntDate.getMonth() + 1).padStart(2, '0');
 const day = String(crntDate.getDate()).padStart(2, '0');
-// currentDate.innerText = `${year}-${month}-${day}`;
+const dayName = crntDate.toLocaleDateString('en-US', {weekday: 'long'});
 currentDate.innerText = `${day}-${month}-${year}`;
+weekDay.innerText = `${dayName}`
 
 // Background color Change
 document.getElementById('themdChanger').addEventListener('click', function(){
